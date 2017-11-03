@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task B</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation JavaScript</h1>
+
+    <form novalidate>
+        <label>First Name<br>
+            <input type="text" name="firstname" required placeholder="Name">
+        </label><br>
+        <label>Last Name<br>
+            <input type="text" name="lastname" required placeholder="Last Name">
+        </label><br>
+        <label>Email<br>
+            <input type="email" name="email" required placeholder="my@email.com" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$">
+        </label><br>
+        <label>Phone Number<br>
+            <input type="text" name="phonenumber" placeholder="+358401234567" pattern="^\+358\d{8,9}$">
+        </label><br>
+        <label>Address<br>
+            <input type="text" name="street" placeholder="Street 1 City">
+        </label><br>
+        <label>Postal Code<br>
+            <input type="text" name="postcode" placeholder="12345" pattern="^\d{5}$">
+        </label><br>
+        <label>Password<br>
+            <input type="password" name="password" placeholder="P@$$w0rD" required pattern="/.{6,}/">
+        </label><br>
+        <button type="submit" value="Save data">SUBMIT</button>
+    </form>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
